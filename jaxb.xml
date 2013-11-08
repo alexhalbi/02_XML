@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<W4F_DOC>
+    <Actor FirstName="Neil" LastName="Strauss">
+        <Movie>
+            <Title>asdf</Title>
+            <Year>1997</Year>
+        </Movie>
+        <Movie>
+            <Title>asdf1</Title>
+            <Year>1995</Year>
+        </Movie>
+        <Movie>
+            <Title>asdf2</Title>
+            <Year>1998</Year>
+        </Movie>
+    </Actor>
+    <Actor FirstName="Charlotte" LastName="Roche">
+        <Movie>
+            <Title>asdf3</Title>
+            <Year>1997</Year>
+        </Movie>
+        <Movie>
+            <Title>asdf</Title>
+            <Year>1997</Year>
+        </Movie>
+    </Actor>
+</W4F_DOC>

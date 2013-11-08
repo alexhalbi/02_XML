@@ -68,7 +68,7 @@ import javax.xml.bind.annotation.XmlType;
 public class W4FDOC {
 
     @XmlElement(name = "Actor", required = true)
-    protected W4FDOC.Actor actor;
+    protected List<W4FDOC.Actor> actor;
 
     /**
      * Gets the value of the actor property.
@@ -78,8 +78,11 @@ public class W4FDOC {
      *     {@link W4FDOC.Actor }
      *     
      */
-    public W4FDOC.Actor getActor() {
-        return actor;
+    public List<W4FDOC.Actor> getActor() {
+    	if (actor == null) {
+            actor = new ArrayList<W4FDOC.Actor>();
+        }
+        return this.actor;
     }
 
     /**
@@ -90,7 +93,7 @@ public class W4FDOC {
      *     {@link W4FDOC.Actor }
      *     
      */
-    public void setActor(W4FDOC.Actor value) {
+    public void setActor(List<W4FDOC.Actor> value) {
         this.actor = value;
     }
 
