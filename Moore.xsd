@@ -1,0 +1,27 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="W4F_DOC">
+    <xs:annotation>
+      <xs:documentation>W4F: Copyright Arnaud Sahuguet and Fabien Azavant, 1998-99      URL: http://db.cis.upenn.edu/W4F</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Actor">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Movie" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="Title"/>
+                    <xs:element type="xs:short" name="Year"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="FirstName"/>
+            <xs:attribute type="xs:string" name="LastName"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
